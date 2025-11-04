@@ -1,0 +1,22 @@
+/* 🌙 Dark Mode (default) */
+body.dark-mode {
+  --bg-color: #000;
+  --text-color: #fff;
+  --box-bg: #1f2937; /* gray-800 */
+  --box-text: #fff;
+}
+
+/* ☀️ Light Mode */
+body.light-mode {
+  --bg-color: #fff;
+  --text-color: #000;
+  --box-bg: #f3f4f6; /* gray-100 */
+  --box-text: #111;
+}
+
+/* Apply transitions globally */
+body, div, section, span {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
